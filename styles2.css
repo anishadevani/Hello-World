@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background-image: url('whitebg.jpg');
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+nav {
+  float: right;
+  background: none;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+  padding-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+  padding: 1.5em;
+  text-transform: none;
+  font-size: 0.8em;
+}
+
+
+nav a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#container, .sections, .section {
+  position: relative;
+  height: 100%;
+}
+
+
+#content0 {
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 13%;
+}
+
+
+h1, h3 {
+  font-size: 4em;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+h2 {
+  font-size: 3em;
+}
+
+
+h3 {
+  font-size: 2em;
+}
+
+
+img {
+  width: 80%;
+  margin: 0;
+}
+
+
+
+#info1 {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+
+#info2 {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.caption {
+  display: block;
+  margin-top: 10px;
+  padding-right: 20px;
+  color: black;
+}
+
+
+#info3 {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.pages {
+  position: fixed;
+  right:60px;
+  top: 50%;
+  list-style: none;
+}
+
+.pages li {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(88, 88, 88);
+  margin: 15px 0 0 6.5px;
+}
+
+.pages li.active {
+  margin-left: 0;
+  width: 12px;
+  height: 12px;
+  border: 3px solid rgb(88, 88, 88);
+  background: none;
+}
