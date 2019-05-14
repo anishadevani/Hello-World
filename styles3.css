@@ -56,9 +56,9 @@ nav a:hover {
 
 
 #content0 {
-  position: absolute;
-  margin-top: 15%;
-  margin-left: 13%;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 
 
