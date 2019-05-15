@@ -9,7 +9,6 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
   background-image: url('whitebg.jpg');
   color: black;
   font-family: 'Quicksand', sans-serif;
