@@ -15,38 +15,23 @@ html, body {
   font-family: 'Quicksand', sans-serif;
 }
 
-
-
-nav {
-  float: right;
-  background: none;
+.navbar {
+  position: absolute; 
   z-index: 999;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.navbar-light {
+  background: transparent;
 }
 
-nav li {
-  display: inline-block;
-  margin: 0 10px;
-  padding-top: 10px;
+.navbar-brand {
+  margin-left: 20px;
+  padding: 10px 20px 20px;
+  font-size: 1.5rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: rgb(88, 88, 88);
-  padding: 1.5em;
-  text-transform: none;
-  font-size: 0.8em;
-}
-
-
-nav a:hover {
-  color: black;
-  cursor: pointer;
+.nav-item {
+  padding: 10px 20px 20px;
 }
 
 #container, .sections, .section {
@@ -68,8 +53,15 @@ nav a:hover {
 }
 
 
-h1, h3 {
-  font-size: 4em;
+h1 {
+  font-size: 5rem;
+  -webkit-animation: fadein 2s; 
+  -moz-animation: fadein 2s; 
+  -ms-animation: fadein 2s;
+}
+
+h3 {
+  font-size: 3em;
   -webkit-animation: fadein 2s; 
   -moz-animation: fadein 2s; 
   -ms-animation: fadein 2s;
@@ -96,13 +88,9 @@ h1, h3 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 4em;
 }
 
-
-h3 {
-  font-size: 2em;
-}
 
 
 img {
@@ -173,8 +161,8 @@ img {
 }
 
 .pages li {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgb(88, 88, 88);
   margin: 15px 0 0 6.5px;
@@ -182,8 +170,8 @@ img {
 
 .pages li.active {
   margin-left: 0;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   border: 3px solid rgb(88, 88, 88);
   background: none;
 }
