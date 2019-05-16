@@ -33,11 +33,6 @@ html, body {
   padding: 10px 20px 20px;
 }
 
-/* #container, .sections, .section {
-  position: relative;
-  height: 100vh;
-} */
-
 
 #content0 {
   position: absolute;
@@ -140,27 +135,4 @@ img {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-}
-
-.pages {
-  position: fixed;
-  right:60px;
-  top: 50%;
-  list-style: none;
-}
-
-.pages li {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgb(88, 88, 88);
-  margin: 15px 0 0 6.5px;
-}
-
-.pages li.active {
-  margin-left: 0;
-  width: 12px;
-  height: 12px;
-  border: 3px solid rgb(88, 88, 88);
-  background: none;
 }

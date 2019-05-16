@@ -9,9 +9,12 @@
 
 html, body {
   height: 100%;
-  background-image: url('whitebg.jpg');
+  background-image: url('anna-kolosyuk-551399-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   color: black;
   font-family: 'Quicksand', sans-serif;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -32,15 +35,17 @@ html, body {
   padding: 10px 20px 20px;
 }
 
+
 #content0 {
   position: relative;
-  width: 78%;
-  margin: 0 auto;
+  text-align: center;
 }
 
-
-h1, h3 {
+h1 {
   font-size: 4em;
+}
+
+h1, form {
   -webkit-animation: fadein 2s;
   -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
@@ -66,122 +71,78 @@ h1, h3 {
   to   { opacity: 1; }
 }
 
-h2 {
-  font-size: 3em;
-}
 
-
-h3 {
-  font-size: 2em;
-}
-
-
-img {
-  width: 80%;
-  margin: 0;
-}
-
-
-
-#info1 {
+input[type=text], select, textarea{
   width: 100%;
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-.title {
-  width: 100%;
-  text-align: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
 
-#info2 {
-  width: 100%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.item {
-  vertical-align: top;
+label {
+  padding: 12px 12px 12px 0;
   display: inline-block;
-  text-align: center;
-  width: 25%;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-}
-
-.caption {
-  display: block;
-  margin-top: 10px;
-  padding-right: 20px;
-  color: black;
-}
-
-
-#info3 {
-  width: 100%;
-  background-size: cover;
+#submitbutton {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 
-.pages {
-  position: fixed;
-  right:60px;
-  top: 50%;
-  list-style: none;
-}
-
-.pages li {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgb(88, 88, 88);
-  margin: 15px 0 0 6.5px;
-}
-
-.pages li.active {
-  margin-left: 0;
-  width: 12px;
-  height: 12px;
-  border: 3px solid rgb(88, 88, 88);
-  background: none;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: rgb(228, 177, 110);
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 20px;
+  width: 30%;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: blanchedalmond;
+  transition: ease-in .1s;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.48);
+  padding: 50px;
+  width: 68%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+
+.col-25 {
+  float: right;
+  width: 25%;
+  margin-top: 10px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 680px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
