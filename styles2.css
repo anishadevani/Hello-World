@@ -9,34 +9,54 @@
 
 html, body {
   height: 100%;
+  overflow: scroll;
   background-image: url('whitebg.jpg');
   color: black;
   font-family: 'Quicksand', sans-serif;
 }
 
-.navbar {
-  position: absolute; 
+nav {
+  float: right;
+  background: none;
   z-index: 999;
 }
 
-.navbar-light {
-  background: transparent;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-brand {
-  margin-left: 20px;
-  padding: 10px 20px 20px;
-  font-size: 1.5rem;
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+  padding-top: 10px;
 }
 
-.nav-item {
-  padding: 10px 20px 20px;
+nav a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+  padding: 1.5em;
+  text-transform: none;
+  font-size: 0.8em;
+}
+
+
+nav a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#container, .sections, .section {
+  position: relative;
+  height: 100%;
 }
 
 
 #content0 {
   position: absolute;
-  margin: 13% 13% 0;
+  margin-top: 15%;
+  margin-left: 13%;
 }
 
 
@@ -116,8 +136,9 @@ img {
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 300px;
+   border-radius: 50%;
 }
 
 .caption {
@@ -135,4 +156,33 @@ img {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.pages {
+  position: fixed;
+  right:60px;
+  top: 50%;
+  list-style: none;
+}
+
+.pages li {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(88, 88, 88);
+  margin: 15px 0 0 6.5px;
+}
+
+.pages li.active {
+  margin-left: 0;
+  width: 12px;
+  height: 12px;
+  border: 3px solid rgb(88, 88, 88);
+  background: none;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
 }
