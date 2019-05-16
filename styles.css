@@ -9,7 +9,7 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-image: url('whitebg.jpg');
   color: black;
   font-family: 'Quicksand', sans-serif;
@@ -92,14 +92,6 @@ h2 {
 }
 
 
-
-img {
-  width: 80%;
-  margin: 0;
-}
-
-
-
 #info1 {
   width: 100%;
   background-size: cover;
@@ -112,6 +104,7 @@ img {
 .title {
   width: 100%;
   text-align: center;
+  margin-top: 7%;
 }
 
 
@@ -131,10 +124,6 @@ img {
   width: 25%;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-}
 
 .caption {
   display: block;
@@ -152,7 +141,7 @@ img {
   align-content: center;
   flex-wrap: wrap;
 }
-
+/* 
 .pages {
   position: fixed;
   right:60px;
@@ -174,4 +163,50 @@ img {
   height: 20px;
   border: 3px solid rgb(88, 88, 88);
   background: none;
+} */
+
+
+
+
+
+#coffeecups {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 70px;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
