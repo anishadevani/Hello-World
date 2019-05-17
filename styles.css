@@ -9,20 +9,24 @@
 
 html, body {
   height: 100%;
-  /* overflow: hidden; */
   background-image: url('whitebg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   color: black;
   font-family: 'Quicksand', sans-serif;
 }
+
 
 .navbar {
   position: absolute; 
   z-index: 999;
 }
 
+
 .navbar-light {
   background: transparent;
 }
+
 
 .navbar-brand {
   margin-left: 20px;
@@ -30,9 +34,11 @@ html, body {
   font-size: 1.5rem;
 }
 
+
 .nav-item {
   padding: 10px 20px 20px;
 }
+
 
 #container, .sections, .section {
   position: relative;
@@ -45,6 +51,7 @@ html, body {
   background-size: cover;
   background-position: 50% 50%;
 }
+
 
 #content0 {
   position: absolute;
@@ -60,6 +67,7 @@ h1 {
   -ms-animation: fadein 2s;
 }
 
+
 h3 {
   font-size: 3em;
   -webkit-animation: fadein 2s; 
@@ -67,28 +75,28 @@ h3 {
   -ms-animation: fadein 2s;
 }
 
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
 
 @-moz-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
+
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
+
 @-ms-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
-}
-
-h2 {
-  font-size: 4em;
 }
 
 
@@ -100,6 +108,7 @@ h2 {
   justify-content: center;
   align-content: center;
 }
+
 
 .title {
   width: 100%;
@@ -116,6 +125,7 @@ h2 {
   align-content: center;
   flex-wrap: wrap;
 }
+
 
 .item {
   vertical-align: top;
@@ -141,32 +151,6 @@ h2 {
   align-content: center;
   flex-wrap: wrap;
 }
-/* 
-.pages {
-  position: fixed;
-  right:60px;
-  top: 50%;
-  list-style: none;
-}
-
-.pages li {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgb(88, 88, 88);
-  margin: 15px 0 0 6.5px;
-}
-
-.pages li.active {
-  margin-left: 0;
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgb(88, 88, 88);
-  background: none;
-} */
-
-
-
 
 
 #coffeecups {
@@ -180,6 +164,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  text-align: center;
 }
 
 
@@ -193,6 +178,12 @@ h2 {
   margin-top: 70px;
   padding: 10px 20px;
   vertical-align: middle;
+}
+
+.column h2 {
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 

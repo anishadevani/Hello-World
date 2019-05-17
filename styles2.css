@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 
 * {
   margin: 0;
@@ -9,86 +9,77 @@
 
 html, body {
   height: 100%;
-  overflow: scroll;
-  background-image: url('whitebg.jpg');
+  background-image: url('pinkbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   color: black;
   font-family: 'Quicksand', sans-serif;
 }
 
-nav {
-  float: right;
-  background: none;
+
+.navbar {
+  position: relative; 
   z-index: 999;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-nav li {
-  display: inline-block;
-  margin: 0 10px;
-  padding-top: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: rgb(88, 88, 88);
-  padding: 1.5em;
-  text-transform: none;
-  font-size: 0.8em;
+.navbar-light {
+  background: transparent;
 }
 
 
-nav a:hover {
-  color: black;
-  cursor: pointer;
+.navbar-brand {
+  margin-left: 20px;
+  padding: 10px 20px 20px;
+  font-size: 1.5rem;
 }
 
-#container, .sections, .section {
+
+.nav-item {
+  padding: 10px 20px 20px;
+}
+
+
+#container {
   position: relative;
-  height: 100%;
-}
-
-
-#content0 {
-  position: absolute;
-  margin-top: 15%;
-  margin-left: 13%;
-}
-
-
-h1, h3 {
-  font-size: 4em;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadein 2s;
   -webkit-animation: fadein 2s;
   -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
 }
+
 
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
+
 @-moz-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
 
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
+
 @-ms-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
-h2 {
-  font-size: 3em;
+
+h1 {
+  font-size: 4em;
 }
 
 
@@ -97,92 +88,39 @@ h3 {
 }
 
 
-img {
-  width: 80%;
-  margin: 0;
-}
-
-
-
-#info1 {
-  width: 100%;
-  background-size: cover;
+.row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  padding: 0 4px;
 }
 
-.title {
-  width: 100%;
-  text-align: center;
-}
-
-
-#info2 {
-  width: 100%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.item {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  width: 25%;
-}
-
-img {
-  width: 100px;
-  height: 300px;
-   border-radius: 50%;
-}
-
-.caption {
-  display: block;
-  margin-top: 10px;
-  padding-right: 20px;
-  color: black;
-}
-
-
-#info3 {
-  width: 100%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.pages {
-  position: fixed;
-  right:60px;
-  top: 50%;
-  list-style: none;
-}
-
-.pages li {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgb(88, 88, 88);
-  margin: 15px 0 0 6.5px;
-}
-
-.pages li.active {
-  margin-left: 0;
-  width: 12px;
-  height: 12px;
-  border: 3px solid rgb(88, 88, 88);
-  background: none;
-}
 
 .column {
-  float: left;
-  width: 40%;
-  padding: 10px;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+
+.column img {
+  margin-top: 70px;
+  padding: 10px 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

@@ -9,12 +9,13 @@
 
 html, body {
   height: 100%;
-  background-image: url('anna-kolosyuk-551399-unsplash.jpg');
+  background-image: url('bluebg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
   font-family: 'Quicksand', sans-serif;
   background-attachment: fixed;
+  background-position: center;
 }
 
 .navbar {
