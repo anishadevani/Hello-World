@@ -10,23 +10,18 @@
 html, body {
   height: 100%;
   background-image: url('whitebg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
   color: black;
   font-family: 'Quicksand', sans-serif;
 }
-
 
 .navbar {
   position: absolute; 
   z-index: 999;
 }
 
-
 .navbar-light {
   background: transparent;
 }
-
 
 .navbar-brand {
   margin-left: 20px;
@@ -34,13 +29,11 @@ html, body {
   font-size: 1.5rem;
 }
 
-
 .nav-item {
   padding: 10px 20px 20px;
 }
 
-
-#container, .sections, .section {
+#page {
   position: relative;
   height: 100%;
 }
@@ -49,14 +42,63 @@ html, body {
 #intro {
   background-image: url('coffee.jpg');
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center;
+  position: relative;
+  height: 100%;
 }
 
 
-#content0 {
+#contents {
   position: absolute;
   margin-top: 15%;
   margin-left: 13%;
+}
+
+#contents svg {
+  width: 120%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#coffee, #subtext {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 3s linear forwards;
+  -o-animation: dash 3s linear forwards;
+  -moz-animation: dash 3s linear forwards;
+  animation: dash 3s linear forwards;
+  fill-opacity: 0;
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+      stroke-dashoffset: 220;
+  }
+
+  85% {
+      stroke-dashoffset: 0; 
+      fill-opacity: 0;
+  }
+  100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 1;
+  }
+}
+
+
+@-moz-keyframes dash {
+  0% {
+      stroke-dashoffset: 220;
+  }
+  85% {
+      stroke-dashoffset:0; 
+      fill-opacity: 0;
+  }
+  100% {
+      stroke-dashoffset: 0; 
+      fill-opacity: 1;
+  }
 }
 
 
@@ -67,7 +109,6 @@ h1 {
   -ms-animation: fadein 2s;
 }
 
-
 h3 {
   font-size: 3em;
   -webkit-animation: fadein 2s; 
@@ -75,38 +116,30 @@ h3 {
   -ms-animation: fadein 2s;
 }
 
-
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 
 @-moz-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
-
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 
 @-ms-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
-
-#info1 {
-  width: 100%;
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+.column h2 {
+  font-size: 2em;
+  padding-top: 5%;
+  padding-right: 14%;
 }
 
 
@@ -125,7 +158,6 @@ h3 {
   align-content: center;
   flex-wrap: wrap;
 }
-
 
 .item {
   vertical-align: top;
@@ -153,6 +185,7 @@ h3 {
 }
 
 
+
 #coffeecups {
   position: relative;
   width: 80%;
@@ -178,12 +211,6 @@ h3 {
   margin-top: 70px;
   padding: 10px 20px;
   vertical-align: middle;
-}
-
-.column h2 {
-  padding-right: 15%;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 
