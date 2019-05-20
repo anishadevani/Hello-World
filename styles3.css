@@ -147,3 +147,46 @@ input[type=submit]:hover {
     margin-top: 10px;
   }
 }
+
+
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  display: flex !important;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  color: black;
+}
+
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 15px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  color: black;
+}
+
+
+.fa-twitter {
+  color: black;
+}
+
+
+.fa-instagram {
+  color: black;
+}
