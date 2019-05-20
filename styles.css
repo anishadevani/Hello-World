@@ -15,7 +15,7 @@ html, body {
 }
 
 .navbar {
-  position: absolute; 
+  position: absolute;
   z-index: 999;
 }
 
@@ -77,7 +77,7 @@ html, body {
   }
 
   85% {
-      stroke-dashoffset: 0; 
+      stroke-dashoffset: 0;
       fill-opacity: 0;
   }
   100% {
@@ -92,11 +92,11 @@ html, body {
       stroke-dashoffset: 220;
   }
   85% {
-      stroke-dashoffset:0; 
+      stroke-dashoffset:0;
       fill-opacity: 0;
   }
   100% {
-      stroke-dashoffset: 0; 
+      stroke-dashoffset: 0;
       fill-opacity: 1;
   }
 }
@@ -104,15 +104,15 @@ html, body {
 
 h1 {
   font-size: 5rem;
-  -webkit-animation: fadein 2s; 
-  -moz-animation: fadein 2s; 
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
 }
 
 h3 {
   font-size: 3em;
-  -webkit-animation: fadein 2s; 
-  -moz-animation: fadein 2s; 
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
 }
 
@@ -206,4 +206,52 @@ h3 {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+
+.fa-facebook {
+  color: black;
+}
+
+
+.fa-twitter {
+  color: black;
+}
+
+
+.fa-instagram {
+  color: black;
 }
