@@ -5,104 +5,109 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-   rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles2.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="page">
+    <span class="menu_toggle">
+      <i class="menu_open fa fa-bars fa-lg"></i>
+      <i class="menu_close fa fa-times fa-lg"></i>
+    </span>
 
-    <a class="navbar-brand" href="#">HELLO, WORLD!</a>
+    <ul class="menu_items">
+      <li><a href="index.html"><i class="icon fa fa-home fa-2x">
+      </i>
+      Home</a></li>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+      <li><a href="aboutpage.html"><i class="icon fa fa-phone fa-2x">
+      </i>
+      About</a></li>
 
-    <div class="collapse navbar-collapse" id="navbarText">
+      <li><a href="contactpage.html"><i class="icon fa fa-heart fa-2x">
+      </i>
+      Contact</a></li>
+    </ul>
 
-      <ul class="navbar-nav mr-auto" style= "padding-left: 20px">
+    <main class="content">
 
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
+      <div class="content_inner">
 
-        <li class="nav-item active">
-          <a class="nav-link" href="aboutpage.html">About</a>
-        </li>
+        <h1>About Us</h1>
+        <br>
+        <h3>Meet the coffee addicts!</h3>
 
-        <li class="nav-item">
-          <a class="nav-link" href="contactpage.html">Contact</a>
-        </li>
+        <div class="row">
+          <div class="column fadeInLeft">
+            <img src="anisha.JPG" alt="Anisha" style="width:90%">
+            <h2>Anisha</h2>
+            <p>A coffee-obsessed Londoner working for an Investment Bank.</p>
+            <p>Favourite coffee: Caramel Latte </p>
+            <p>Favourite Café: Manon Café </p>
+          </div>
 
-      </ul>
+          <div class="column fadeInLeft">
+            <img src="radeyah.JPG" alt="Radeyah" style="width:90%">
+            <h2>Radeyah</h2>
+            <p>A mother and a design graduate.</p>
+            <p>Favourite coffee: Mocha frappe without sugar </p>
+            <p>Favourite Café: Carpo Knightsbridge </p>
+          </div>
 
-    </div>
+          <div class="column fadeInRight">
+            <img src="shuen.jpg" alt="Shuen" style="width:90%">
+            <h2>Shuen</h2>
+            <p>A caffeine-dependent research analyst in a FinTech start-up.</p>
+            <p>Favourite coffee: Latté with oat milk </p>
+            <p>Favourite Café: Prufrock Coffee </p>
+          </div>
 
-  </nav>
+          <div class="column fadeInRight">
+            <img src="tongret.JPG" alt="Tongret" style="width:90%">
+            <h2>Tongret</h2>
+            <p>A law graduate who has passion for grass-root development and is into human rights activities.</p>
+            <p>Favourite coffee: White coffee </p>
+            <p>Favourite Café: Any café close by </p>
+          </div>
 
-  <div id="container">
+        </div>
 
-    <h1>About Us</h1>
-    <br>
-    <h3>Meet the coffee addicts!</h3>
+        <footer class="footer">
+          <div class="container">
+            <span>Follow us!</span>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </footer>
 
-    <div class="row">
-      <div class="column">
-        <img src="anisha.JPG" alt="Anisha" style="width:90%">
-        <h2>Anisha</h2>
-        <p>A coffee-obsessed Londoner working for an Investment Bank.</p>
-        <p>Favourite coffee: Caramel Latte </p>
-        <p>Favourite Café: Manon Café </p>
       </div>
 
-      <div class="column">
-        <img src="radeyah.JPG" alt="Radeyah" style="width:90%">
-        <h2>Radeyah</h2>
-        <p>A mother and a design graduate.</p>
-        <p>Favourite coffee: Mocha frappe without sugar </p>
-        <p>Favourite Café: Carpo Knightsbridge </p>
-      </div>
-
-      <div class="column">
-        <img src="shuen.jpg" alt="Shuen" style="width:90%">
-        <h2>Shuen</h2>
-        <p>A caffeine-dependent research analyst in a FinTech start-up.</p>
-        <p>Favourite coffee: Latté with oat milk </p>
-        <p>Favourite Café: Prufrock Coffee </p>
-      </div>
-
-      <div class="column">
-        <img src="tongret.JPG" alt="Tongret" style="width:90%">
-        <h2>Tongret</h2>
-        <p>A law graduate who has passion for grass-root development and is into human rights activities.</p>
-        <p>Favourite coffee: White coffee </p>
-        <p>Favourite Café: Any café close by </p>
-      </div>
-
-    </div>
+    </main>
 
   </div>
-
-  <footer class="footer">
-
-      <div class="container">
-
-          <span>Follow us!</span>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
-
-      </div>
-
-  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script>
+    var $page = $('.page');
+
+      $('.menu_toggle').on('click', function() {
+          $page.toggleClass('next');
+      });
+
+      $('.content').on('click', function(){
+          $page.removeClass('next');
+      });
+  </script>
 
 </body>
 

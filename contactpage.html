@@ -14,116 +14,119 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">HELLO, WORLD!</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto" style= "padding-left: 20px">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutpage.html">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="contactpage.html">Contact</a>
-        </li>
-      </ul>
+  <div class="page">
+    <span class="menu_toggle">
+      <i class="menu_open fa fa-bars fa-lg"></i>
+      <i class="menu_close fa fa-times fa-lg"></i>
+    </span>
 
-    </div>
-  </nav>
+    <ul class="menu_items">
+      <li><a href="index.html"><i class="icon fa fa-home fa-2x">
+      </i>
+      Home</a></li>
 
-  <div class="sections">
+      <li><a href="aboutpage.html"><i class="icon fa fa-phone fa-2x">
+      </i>
+      About</a></li>
 
-    <div id="content0">
-      <h1>Contact Us</h1>
-      <br>
-    </div>
+      <li><a href="contactpage.html"><i class="icon fa fa-heart fa-2x">
+      </i>
+      Contact</a></li>
+    </ul>
 
-    <div class="container">
-      <form action="action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="First Name">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Last Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Last Name">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="Email">Email address</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="Email" name="Emailaddress" placeholder="Email Address">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="location">Location</label>
-          </div>
-          <div class="col-75">
-            <select id="location" name="location">
-              <option value="london">London</option>
-              <option value="bath">Bath</option>
-              <option value="bristol">Bristol</option>
-              <option value="cambridge">Cambridge</option>
-              <option value="coventry">Coventry</option>
-              <option value="durham">Durham</option>
-              <option value="leeds">Leeds</option>
-              <option value="leicester">Leicester</option>
-              <option value="liverpool">Liverpool</option>
-              <option value="manchester">Manchester</option>
-              <option value="nottingham">Nottingham</option>
-              <option value="oxford">Oxford</option>
-              <option value="portsmouth">Portsmouth</option>
-              <option value="sheffield">Sheffield</option>
-              <option value="southampton">Southampton</option>
-              <option value="sunderland">Sunderland</option>
-              <option value="worcester">Worcester</option>
-              <option value="york">York</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="message">Message</label>
-          </div>
-          <div class="col-75">
-            <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-          </div>
-        </div>
-        <div class="row" id="submitbutton">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-    </div>
 
+    <main class="content">
+      <div class="content_inner fadeInUp">
+        <div id="content0">
+          <h1>Contact Us</h1>
+          <br>
+        </div>
+
+        <div class="container">
+          <form action="action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Email">Email address</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="Email" name="Emailaddress" placeholder="Email Address">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="location">Location</label>
+              </div>
+              <div class="col-75">
+                <select id="location" name="location">
+                  <option value="london">London</option>
+                  <option value="bath">Bath</option>
+                  <option value="bristol">Bristol</option>
+                  <option value="cambridge">Cambridge</option>
+                  <option value="coventry">Coventry</option>
+                  <option value="durham">Durham</option>
+                  <option value="leeds">Leeds</option>
+                  <option value="leicester">Leicester</option>
+                  <option value="liverpool">Liverpool</option>
+                  <option value="manchester">Manchester</option>
+                  <option value="nottingham">Nottingham</option>
+                  <option value="oxford">Oxford</option>
+                  <option value="portsmouth">Portsmouth</option>
+                  <option value="sheffield">Sheffield</option>
+                  <option value="southampton">Southampton</option>
+                  <option value="sunderland">Sunderland</option>
+                  <option value="worcester">Worcester</option>
+                  <option value="york">York</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="message">Message</label>
+              </div>
+              <div class="col-75">
+                <textarea id="message" name="message" placeholder="Message" style="height:130px"></textarea>
+              </div>
+            </div>
+            <div class="row" id="submitbutton">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      
+
+
+
+        <footer class="footer">
+
+          <div class="container1">
+
+            <span>Follow us!</span>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+
+          </div>
+
+        </footer>
+      </div>
+    </main>
   </div>
-
-
-  <footer class="footer">
-
-    <div class="container1">
-
-      <span>Follow us!</span>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
-
-    </div>
-
-  </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -131,6 +134,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script>
+    var $page = $('.page');
+
+      $('.menu_toggle').on('click', function() {
+          $page.toggleClass('next');
+      });
+
+      $('.content').on('click', function(){
+          $page.removeClass('next');
+      });
+  </script>
 
 
 
