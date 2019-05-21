@@ -291,6 +291,7 @@ html, body {
     }
 }
 
+
 @-webkit-keyframes fadeInRight {
     from {
         transform: translate3d(40px, 0,0);
@@ -328,6 +329,7 @@ html, body {
         opacity: 1
     }
 }
+
 
 h1 {
   font-size: 3em;
