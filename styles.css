@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 
-body, html {
-	border: 0;
-	margin: 0;
+*, html, body {
+  margin: 0;
+  padding: 0;
 }
+
 
 .page {
   height: 100%;
